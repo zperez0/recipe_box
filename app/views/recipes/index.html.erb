@@ -1,0 +1,26 @@
+<div class="title-container">
+  <h3>Welcome</h3>
+</div>
+  <p>This is the recipe box!</p>
+    
+<div class="title-container">
+  <h2>Recipes</h2>
+</div>
+
+<div class="recipes">
+  <% if @recipes.any? %>
+    <ul>
+      <% @recipes.each do |recipe| %>
+        <div class="recipe">
+          <div class="thumbmail">
+            <div class="caption">
+              <p><li><%= link_to recipe.title, recipe_path(recipe) %></li></p>
+      <% end %>
+    </ul>
+  <% else %> 
+            </div>
+          </div>
+        </div>
+      <p>There are no recipes yet.</p>
+  <% end %>
+</div>
