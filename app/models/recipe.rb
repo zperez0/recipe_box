@@ -1,7 +1,7 @@
 class Recipe < ApplicationRecord
   has_and_belongs_to_many :tags, dependent: :destroy
   validates :title, presence: true
-  vallidates :ingredient, presence: true
+  validates :ingredient, presence: true
   validates :instruction, presence: true
   validates :content_body, presence: true
   validates :rating, presence: true
