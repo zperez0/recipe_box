@@ -1,24 +1,19 @@
-# README
+# Recipe Box
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+WIP:
 
-Things you may want to cover:
+* add intergration tests
 
-* Ruby version
+* add authentication
 
-* System dependencies
+* add api
 
-* Configuration
+* fix navbar links
 
-* Database creation
+* fix recipe controller
 
-* Database initialization
+* add styling, images, etc.
 
-* How to run the test suite
+* add scopes
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* add landing page?
