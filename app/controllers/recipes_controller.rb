@@ -16,7 +16,7 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new(recipes_params)
     if @recipe.save
       flash[:notice] = "Recipe successfully added!"
-      redirect_to products_path
+      redirect_to recipes_path
     else
       flash[:alert] = "Oops..Looks like there was an error in creating your recipe. Try again."
       render :new
