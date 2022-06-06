@@ -2,9 +2,13 @@
 
 WIP:
 
-* add intergration tests
+* can add tag but won't display on recipe page (check recipe controller?)
+
+* include ability to add multiple tags
 
 * add authentication
+
+* add intergration tests
 
 * add api
 
