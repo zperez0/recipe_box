@@ -3,7 +3,7 @@
 </div>
 <h3>Rating: <%= @recipe.rating %> ⭐ </h3>
 <br>
-  <h4>Ingredients:</h4>
+  <h4>Ingredient:</h4>
 <ul>
   <li> <%= @recipe.ingredient %>
   </li>
@@ -18,13 +18,11 @@
 <p>Tags:</p>
 
   <% if @recipe.tags.any? %>
-
-  <% @recipe.tags.each do |tag| %>
-    <ul>
-      <li>
+  <% recipe_tags = @recipe.tags.sort_by { |k| k[:tag] } %>
+  <% recipe_tags.tags.each do |tag| %>
+  <span>
         <%= link_to tag.category, recipe_tag_path(@recipe, tag) %>
-      </li>
-    </ul>
+  </span>
   <% end %>
 <% else %>
   <p>No tags are listed for this recipe.</p>
