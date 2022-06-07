@@ -5,7 +5,7 @@
 <%= form_for [@recipe, @tag] do |form| %>
   <div class="form-group">
     <%= form.label :category %>
-    <%= form.text_field :category, class: "form-control" %>
+    <%= form.text_field :category, value: recipe.tags.map(&:category).join(","), class: "form-control" %>
   </div>
 
   <div class="actions">
