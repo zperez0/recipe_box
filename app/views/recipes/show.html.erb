@@ -1,15 +1,19 @@
 <div class="title-container">
-  <h1><%= @recipe.title %></h1>
+  <h2><%= @recipe.title %></h2>
 </div>
 <h3>Rating: <%= @recipe.rating %> ⭐ </h3>
-
-  <h4>list of ingredient:</h4>
+<br>
+  <h4>Ingredients:</h4>
 <ul>
   <li> <%= @recipe.ingredient %>
   </li>
 </ul>
-<h4>Instructions:<%= @recipe.instruction %></h4>
-<h3>Notes: <%= @recipe.content_body %></h3>
+<br>
+<h4>Instructions:</h4>
+<p> <%= @recipe.instruction %></p>
+<br>
+<h4>Notes:</h3>
+<p><%= @recipe.content_body %></p>
 
 <p>Tags:</p>
 
@@ -40,5 +44,5 @@
     </div>
   </div>
 
-<p><%= link_to "Add a review", new_recipe_tag_path(@recipe) %></p>
+<p><%= link_to "Add a tag", new_recipe_tag_path(@recipe) %></p>
 <p><%= link_to "Return to recipes", recipes_path %></p>
