@@ -1,6 +1,6 @@
 # Recipe Box
 
-Devise
+Bcrypt
 
 WIP:
 
