@@ -12,8 +12,16 @@
         <a href="?sort=most_recent"><button class="btn btn-link">Recently added</button></a>
         <a href="?sort=most_reviews"><button class="btn btn-link">Most Reviews</button></a>
         <a href="?sort=local_product"><button class="btn btn-link">USA Products</button></a>
-        <button class="btn btn-link"><%= link_to "All Recipes", root_path %></button>
+        <button class="btn btn-link"><%= link_to "All Recipes", recipes_path %></button>
         <button class="btn btn-link"><%= link_to "New Recipe", new_recipe_path %></button>
+      </ul>
+
+      <ul>
+        <% if current_user  %>
+      <%= current_user.email %> | <%= link_to "Sign out", "/signout" %>
+    <% else %>
+      <%= link_to "Sign up", "/signup" %> | <%= link_to "Sign in", "/signin" %>
+    <% end %>
       </ul>
     </div>
   </nav>
