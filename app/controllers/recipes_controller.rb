@@ -9,6 +9,10 @@ class RecipesController < ApplicationController
     render :index
   end
 
+  def home
+    render :home
+  end
+
   def new
     @recipe = Recipe.new
     @tags = Tag.all
